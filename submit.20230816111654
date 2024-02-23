@@ -1,0 +1,108 @@
+Assignment Submission
+       Unit: cosc330
+ Assignment: a2
+   Username: bwatso25
+     Who is: Bryce Watson <bwatso25@myune.edu.au>
+       Date: Wed 16 Aug 2023 11:16:54 AEST
+----------------------------------------------------------------
+Files submitted:
+-rw-r--r--. 1 bwatso25 bwatso25 8.3K Aug 16 11:09 a2.c
+-rw-r--r--. 1 bwatso25 bwatso25  161 Aug 16 11:09 makefile
+-rw-r--r--. 1 bwatso25 bwatso25 1.3K Aug  9 05:40 sem_ops.h
+----------------------------------------------------------------
+Script of session:
+Script started on 2023-08-16 11:15:28+10:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="133" LINES="17"]
+]0;bwatso25@turing:~/Desktop/cosc330_2023/assignment_2[?2004h[36m[[m[34mbwatso25@turing[m [32massignment_2[m[36m][m $ make
+[?2004lgcc -Wall -pedantic -g -pthread a2.c -o a2
+]0;bwatso25@turing:~/Desktop/cosc330_2023/assignment_2[?2004h[36m[[m[34mbwatso25@turing[m [32massignment_2[m[36m][m $ make run
+[?2004l./a2
+Incrementer 1 set sum = 1
+Incrementer 0 set sum = 2
+Incrementer 2 set sum = 3
+Incrementer 3 set sum = 4
+Incrementer 4 set sum = 5
+Decrementer 1 set sum = 4
+Decrementer 0 set sum = 3
+Decrementer 2 set sum = 2
+Decrementer 4 set sum = 1
+Decrementer 3 set sum = 0
+Reader 0 got 0
+Reader 1 got 0
+There were 2 readers, 5 incrementers, and 5 decrementers
+The final state of the data is:
+last incrementer: 4
+last decrementer 4
+total writers 10
+sum 0
+]0;bwatso25@turing:~/Desktop/cosc330_2023/assignment_2[?2004h[36m[[m[34mbwatso25@turing[m [32massignment_2[m[36m][m $ make [K[K[K[K[K./a2
+[?2004lIncrementer 0 set sum = 1
+Incrementer 1 set sum = 2
+Incrementer 2 set sum = 3
+Incrementer 3 set sum = 4
+Decrementer 0 set sum = 3
+Decrementer 1 set sum = 2
+Decrementer 2 set sum = 1
+Reader 0 got 1
+Reader 1 got 1
+There were 2 readers, 4 incrementers, and 3 decrementers
+The final state of the data is:
+last incrementer: 3
+last decrementer 2
+total writers 7
+sum 1
+]0;bwatso25@turing:~/Desktop/cosc330_2023/assignment_2[?2004h[36m[[m[34mbwatso25@turing[m [32massignment_2[m[36m][m $ ./a2
+[?2004lIncrementer 0 set sum = 1
+Incrementer 1 set sum = 2
+Incrementer 2 set sum = 3
+Decrementer 0 set sum = 2
+Incrementer 3 set sum = 3
+Decrementer 1 set sum = 2
+Decrementer 2 set sum = 1
+Decrementer 3 set sum = 0
+Decrementer 4 set sum = -1
+Reader 0 got -1
+There were 1 readers, 4 incrementers, and 5 decrementers
+The final state of the data is:
+last incrementer: 3
+last decrementer 4
+total writers 9
+sum -1
+]0;bwatso25@turing:~/Desktop/cosc330_2023/assignment_2[?2004h[36m[[m[34mbwatso25@turing[m [32massignment_2[m[36m][m $ ./a2
+[?2004lIncrementer 0 set sum = 1
+Incrementer 1 set sum = 2
+Decrementer 0 set sum = 1
+Decrementer 1 set sum = 0
+Decrementer 2 set sum = -1
+Reader 0 got -1
+There were 1 readers, 2 incrementers, and 3 decrementers
+The final state of the data is:
+last incrementer: 1
+last decrementer 2
+total writers 5
+sum -1
+]0;bwatso25@turing:~/Desktop/cosc330_2023/assignment_2[?2004h[36m[[m[34mbwatso25@turing[m [32massignment_2[m[36m][m $ /[K./a2
+[?2004lIncrementer 0 set sum = 1
+Decrementer 0 set sum = 0
+Decrementer 1 set sum = -1
+Decrementer 2 set sum = -2
+Decrementer 3 set sum = -3
+Reader 0 got -3
+Reader 2 got -3
+Reader 1 got -3
+Reader 3 got -3
+Reader 4 got -3
+Reader 5 got -3
+Reader 6 got -3
+There were 7 readers, 1 incrementers, and 4 decrementers
+The final state of the data is:
+last incrementer: 0
+last decrementer 3
+total writers 5
+sum -3
+]0;bwatso25@turing:~/Desktop/cosc330_2023/assignment_2[?2004h[36m[[m[34mbwatso25@turing[m [32massignment_2[m[36m][m $ make clean
+[?2004lrm -f *~ *.o a2
+]0;bwatso25@turing:~/Desktop/cosc330_2023/assignment_2[?2004h[36m[[m[34mbwatso25@turing[m [32massignment_2[m[36m][m $ exit
+[?2004lexit
+
+Script done on 2023-08-16 11:16:48+10:00 [COMMAND_EXIT_CODE="0"]
+3726
